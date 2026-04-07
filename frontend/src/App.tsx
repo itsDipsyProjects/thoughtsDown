@@ -1,3 +1,16 @@
-export default function App(): JSX.Element {
-  return <h1>Hello React + Vite + TypeScript 👋</h1>
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { Home } from './Home/Home';
+
+function App() {
+
+  return (
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/post/:slug" element={<h1>Post page</h1>} />
+      <Route path="/admin" element={<h1>Admin</h1>} />
+      <Route path="*" element={<Navigate to="/" />} />
+    </Routes>
+  );
 }
+
+export default App;
