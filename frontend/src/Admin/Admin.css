@@ -1,0 +1,15 @@
+.input_container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+input{
+    width: 40vw;
+    height: 40px;
+}
+
+textarea{
+    width: 40vw;
+    height: 300px;
+}
